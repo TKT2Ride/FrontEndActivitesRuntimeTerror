@@ -1,12 +1,33 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8" />
-    <title>Code The Way</title>
-    <link rel="stylesheet" href="style/style.css">
+    <meta charset="utf-8">
+    <title>Rock Paper cissors </title>
 </head>
 <body>
-    <!-- <canvas width="300" height="300" style="background-color: palevioletred" id="myCanvas"></canvas> -->
-    <!-- <script src="js/script.js"></script>-->
+    <div class="parent">
+        <div class="narrow">
+            <canvas id="myCanvas" width="300" height="300" style="background-color:powderblue;"></canvas>
+            <script src="js/script.js"></script>
+            <img id="1" src="img/1.png" style="display: none;">
+            <img id="2" src="img/2.png" style="display: none;">
+            <img id="3" src="img/3.png" style="display: none;">
+        </div>
+        <div class="wide">
+            <input type="radio" id="rock" name="rps"></input>
+            <label for="rock">Rock</label><br>
+            <input type="radio" id="paper" name="rps"></input>
+            <label for="paper">Paper</label><br>
+            <input type="radio" id="scissors" name="rps"></input>
+            <label for="scissors">Scissors</label>
+            <br>
+            <button type="button" onclick="rNum()">Play</button>
+            <p id="demo"></p>
+            <p id="total"></p>
+            <p id="sec"></p>
+            <p id="es"></p>
+        </div>
+    </div>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </body>
 </html>

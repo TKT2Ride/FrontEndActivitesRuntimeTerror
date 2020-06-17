@@ -1,43 +1,58 @@
-﻿const c = document.getElementById("myCanvas");
-const ctx = c.getContext("2d");
-const CANVAS_WIDTH = c.width;
-const CANVAS_THIRD = CANVAS_WIDTH / 3;
+﻿const canvas = document.getElementById('myCanvas');
+const ctx = canvas.getContext('2d');
+let num;
+var img;
+let win = 0;
+let lose = 0;
+let tie = 0
 
-start();
+function rNum() {
+    ctx.clearRect(0, 0, 300, 300);
+    num = Math.floor((Math.random() * 3) + 1);
+    console.log(num);
+    img = document.getElementById(num);
+    if (num == 1) {
+        ctx.drawImage(img, 88, 0, 132, 300);
+    }
+    else if (num == 2) {
+        ctx.drawImage(img, 89, 0, 101, 300);
+    }
+    else {
+        ctx.drawImage(img, 60, 0, 171, 300);
+    }
+    var rock = document.getElementById("rock")
+    var paper = document.getElementById("paper")
+    var scissors = document.getElementById("scissors")
 
+    if ((rock.checked == true) && (num == 2)) {
+        document.getElementById("demo").innerHTML = "You win! Good job!"
+        win++;
+    }
+    else if ((paper.checked == true) && (num == 1)) {
+        document.getElementById("demo").innerHTML = "You win! Good job!"
+        win++;
+    }
+    else if ((scissors.checked == true) && (num == 3)) {
+        document.getElementById("demo").innerHTML = "You win! Good job!"
+        win++;
+    } else if ((scissors.checked == true) && (num == 2)) {
+        document.getElementById("demo").innerHTML = "Tie :/"
+        tie++;
+    } else if ((rock.checked == true) && (num == 1)) {
+        document.getElementById("demo").innerHTML = "Tie :/"
+        tie++;
+    } else if ((paper.checked == true) && (num == 3)) {
+        document.getElementById("demo").innerHTML = "Tie :/"
+        tie++;
+    }
+    else {
+        document.getElementById("demo").innerHTML = "You Lose! Sorry :("
+        lose++;
+    }
 
-function start() {
-    drawLines();
-    c.addEventListener("click", findClick);
+    document.getElementById("total").innerHTML = win + " win(s)"
+    document.getElementById("sec").innerHTML = lose + " lose(s)"
+    document.getElementById("es").innerHTML = tie + " tie(s)"
 }
 
-function drawLines() {
-    ctx.beginPath();
-    ctx.moveTo(CANVAS_THIRD, 0);
-    ctx.lineTo(CANVAS_THIRD, CANVAS_WIDTH);
-    ctx.stroke();
-
-    ctx.beginPath();
-    ctx.moveTo(CANVAS_THIRD * 2, 0);
-    ctx.lineTo(CANVAS_THIRD * 2, CANVAS_WIDTH);
-    ctx.stroke();
-
-    ctx.beginPath();
-    ctx.moveTo(0, CANVAS_THIRD);
-    ctx.lineTo(CANVAS_WIDTH, CANVAS_THIRD);
-    ctx.stroke();
-
-    ctx.beginPath();
-    ctx.moveTo(0, CANVAS_THIRD * 2);
-    ctx.lineTo(CANVAS_WIDTH, CANVAS_THIRD * 2);
-    ctx.stroke();
-}
-
-function findClick() {
-    findClickX();
-    findClickY();
-    const rect = c.getBoundingClientRect()
-    const x = event.clientX - rect.left
-    const y = event.clientY - rect.top
-    console.log("x: " + x + " y: " + y)
-}
+//.src="img/rps/" + num + ".png"

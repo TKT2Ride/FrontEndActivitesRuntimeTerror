@@ -1,3 +1,14 @@
-﻿body {
+﻿.parent {
+    display: flex;
+}
 
+.narrow {
+    width: 300px;
+    background: lightblue;
+    /* Just so it's visible */
+}
+
+.wide {
+    flex: 1;
+    background: lightgreen;
 }
