@@ -8,6 +8,7 @@ start();
 
 function start() {
     drawLines();
+    c.addEventListener("click", findClick);
 }
 
 function drawLines() {
@@ -30,4 +31,13 @@ function drawLines() {
     ctx.moveTo(0, CANVAS_THIRD * 2);
     ctx.lineTo(CANVAS_WIDTH, CANVAS_THIRD * 2);
     ctx.stroke();
+}
+
+function findClick() {
+    findClickX();
+    findClickY();
+    const rect = c.getBoundingClientRect()
+    const x = event.clientX - rect.left
+    const y = event.clientY - rect.top
+    console.log("x: " + x + " y: " + y)
 }
