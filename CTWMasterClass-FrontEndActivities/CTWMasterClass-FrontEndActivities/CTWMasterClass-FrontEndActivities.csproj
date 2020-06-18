@@ -131,6 +131,7 @@
     <Content Include="Alijah\HerosForHealthcare.html" />
     <Content Include="Alijah\Media.html" />
     <Content Include="Alijah\LifeNavigators.html" />
+    <Content Include="Alijah\site.css" />
     <Content Include="Ammar\CTWpratice.html" />
     <Content Include="Ammar\Heroes.html" />
     <Content Include="Ammar\Life.html" />
