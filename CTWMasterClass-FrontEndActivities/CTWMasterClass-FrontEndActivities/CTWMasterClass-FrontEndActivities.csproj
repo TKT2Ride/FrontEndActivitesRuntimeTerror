@@ -127,6 +127,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Alijah\CodeTheWay.html" />
+    <Content Include="Alijah\HerosForHealthcare.html" />
+    <Content Include="Alijah\Media.html" />
+    <Content Include="Alijah\LifeNavigators.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
