@@ -135,6 +135,10 @@
     <Content Include="Ammar\Heroes.html" />
     <Content Include="Ammar\Life.html" />
     <Content Include="Ammar\Media.html" />
+    <Content Include="Ava\CodeTheWay.html" />
+    <Content Include="Ava\HerosForHealthcare.html" />
+    <Content Include="Ava\LifeNavigator.html" />
+    <Content Include="Ava\Media.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
