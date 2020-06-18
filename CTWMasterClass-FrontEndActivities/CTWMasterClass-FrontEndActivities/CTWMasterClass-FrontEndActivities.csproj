@@ -131,6 +131,14 @@
     <Content Include="Alijah\HerosForHealthcare.html" />
     <Content Include="Alijah\Media.html" />
     <Content Include="Alijah\LifeNavigators.html" />
+    <Content Include="Ammar\CTWpratice.html" />
+    <Content Include="Ammar\Heroes.html" />
+    <Content Include="Ammar\Life.html" />
+    <Content Include="Ammar\Media.html" />
+    <Content Include="Ava\CodeTheWay.html" />
+    <Content Include="Ava\HerosForHealthcare.html" />
+    <Content Include="Ava\LifeNavigator.html" />
+    <Content Include="Ava\Media.html" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -164,6 +172,10 @@
     <Content Include="IMAGE_CONTENT\Life Navigators\LifeNavigators4.jpg" />
     <Content Include="IMAGE_CONTENT\Life Navigators\LifeNavigatorsMission.txt" />
     <Content Include="INSTRUCTIONS\Instructions.txt" />
+    <Content Include="ryan\hereos.html" />
+    <Content Include="ryan\ln.html" />
+    <Content Include="ryan\media.html" />
+    <Content Include="ryan\ctw.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
