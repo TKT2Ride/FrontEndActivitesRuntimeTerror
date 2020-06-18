@@ -4,20 +4,43 @@
     <meta charset="utf-8" />
     <title>CTW</title>
     <link rel="stylesheet" href="site.css">
+    <script src="script.js"></script>
 </head>
-<body>
+<body onload="showHide()">
     <img src="../IMAGE_CONTENT/Code the Way/CodeTheWay Logo.png" />
     <h1 class="majorHeading">Code The Way</h1>
     <h2 class="minorHeading">Mission</h2>
     <p class="generalText">Code the Way facilitates the collaboration of schools, companies, and nonprofits to: (1) Offer students advanced computer science training and real-world job experiences working on projects that benefit nonprofits; (2) Increase certified computer science teachers; and (3) Contribute to the technology talent base.</p>
     <p class="generalText">Code the Way model includes:</p>
     <ul class="generalText">
-        <li>Student access to real-world job experience – In addition to an advanced course that may earn post-secondary credits, students get experience working collaboratively on a project that benefits a nonprofit, culminating in a presentation to business leaders.</li>
-        <li>Companies are part of the solution – Companies invest in education, make technology more accessible to nonprofits, offer their employees a meaningful volunteer experience, and contribute to the talent pipeline.</li>
-        <li>Increasing certified computer science teachers – Support and training for computer science teacher certification increase the availability and quality of high school computer science programs.</li>
+        <li>
+            <div class="tooltip">
+                Student access to real-world job experience
+                <div class="tooltiptext">In addition to an advanced course that may earn post-secondary credits, students get experience working collaboratively on a project that benefits a nonprofit, culminating in a presentation to business leaders.</div>
+            </div>
+        </li>
+        <li>
+            <div class="tooltip">
+                Companies are part of the solution
+                <div class="tooltiptext">Companies invest in education, make technology more accessible to nonprofits, offer their employees a meaningful volunteer experience, and contribute to the talent pipeline.</div>
+            </div>
+        </li>
+        <li>
+            <div class="tooltip">
+                Increasing certified computer science teachers
+                <div class="tooltiptext">Support and training for computer science teacher certification increase the availability and quality of high school computer science programs.</div>
+            </div>
+        </li>
+
     </ul>
-    <img src="../IMAGE_CONTENT/Code the Way/Team Learning.jpg" style="float:right" /><h2 class="minorHeading">Vision</h2>
-    <p class="generalText">High school students in Greater Milwaukee have access to high-quality computer science education and real-world job experiences, positioning them for success in technology-related fields</p>
+    <img src="../IMAGE_CONTENT/Code the Way/Team Learning.jpg" style="float:right" />
+    <button onclick="showHide()" class="buttonFormatting">Show Vision</button>
+    <div id="vision">
+        <p class="minorHeading">Vision</p>
+        <div class="generalText">
+            <p>High school students in Greater Milwaukee have access to high quality computer science education and real-world job experiences, positioning them for success in technology-related fields.</p>
+        </div>
+    </div>
     <h2 class="minorHeading">Links</h2>
     <button type="button" class="buttonFormatting" onclick="location.href='ln.html';">Life Navigators</button><button type="button" class="buttonFormatting" onclick="location.href='hereos.html';">Heroes For Healthcare</button><button type="button" class="buttonFormatting" onclick="location.href='media.html';">Media</button>
 </body>
