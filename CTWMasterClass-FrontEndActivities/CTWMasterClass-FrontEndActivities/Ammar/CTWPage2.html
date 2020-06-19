@@ -3,66 +3,49 @@
 <head>
     <meta charset="utf-8" />
     <title>Code The Way</title>
+    <link rel="StyleSheet1.scss" href="site.css">
+    <script src="script.js"></script>
     <link href="../Content/bootstrap.min.css" rel="stylesheet" />
     <script src="../Scripts/bootstrap.min.js"></script>
     <script src="../Scripts/jquery-3.4.1.min.js"></script>
 </head>
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-2">
-                Logo
-            </div>
-            <div class="col-sm-10">
-                Code the Way
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-3">
-                Code The Way - Button
-            </div>
-            <div class="col-sm-3">
-                Life Navigators-Button
-            </div>
-            <div class="col-sm-3">
-                Heroes For Healthcare - Button
-            </div>
-            <div class="col-sm-3">
-                Media - Button
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6">
-                <div class="row">
-                    <div class="col-sm-3">
-                        Mission
-                    </div>
-                    <div class="col-sm-9">
-                        Mission Explanation
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-sm-12">
-                        Show Vision - Button
-                    </div>
-                </div>
-                <div id=”vision”>
-                    <div class="row">
-                        <div class="col-sm-3">
-                            Vision
-                        </div>
-                        <div class="col-sm-9">
-                            Vision Explanation
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-6">
-                Image of team learning
-            </div>
+
+<body onload="showHide()">
+    <img src="../IMAGE_CONTENT/Code the Way/CodeTheWay Logo.png" />
+    <h1 class="majorHeading">Code The Way</h1>
+    <h3 class="minorHeading">Mission</h3>
+    <p class="generalText">Code the Way facilitates the collaboration of schools, companies, and nonprofits to: (1) Offer students advanced computer science training and real-world job experiences working on projects that benefit nonprofits; (2) Increase certified computer science teachers; and (3) Contribute to the technology talent base.</p>
+    <p class="generalText">Code the Way model includes:</p>
+    <ul class="generalText">
+        <li>
+            
+                Student access to real-world job experience
+                In addition to an advanced course that may earn post-secondary credits, students get experience working collaboratively on a project that benefits a nonprofit, culminating in a presentation to business leaders.
+            
+        </li>
+        <li>
+            
+                Companies are part of the solution
+                Companies invest in education, make technology more accessible to nonprofits, offer their employees a meaningful volunteer experience, and contribute to the talent pipeline.
+            
+        </li>
+        <li>
+            
+                Increasing certified computer science teachers
+                Support and training for computer science teacher certification increase the availability and quality of high school computer science programs.</div>
+            
+        </li>
+
+    </ul>
+    <img src="../IMAGE_CONTENT/Code the Way/Team Learning.jpg"  />
+    <button onclick="showHide()" class="buttonFormatting">Show Vision</button>
+    <div id="vision">
+        <p class="minorHeading">Vision</p>
+        <div class="generalText">
+            <p>High school students in Greater Milwaukee have access to high quality computer science education and real-world job experiences, positioning them for success in technology-related fields.</p>
         </div>
     </div>
+    <h3 class="minorHeading">Links</h3>
+    <button type="button" class="buttonFormatting" onclick="location.href='Life.html';">Life Navigators</button><button type="button" class="buttonFormatting" onclick="location.href='Hereos.html';">Heroes For Healthcare</button><button type="button" class="buttonFormatting" onclick="location.href='Media.html';">Media</button>
 </body>
 </html>
