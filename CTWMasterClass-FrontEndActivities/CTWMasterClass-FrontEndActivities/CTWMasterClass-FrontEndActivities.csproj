@@ -173,9 +173,11 @@
     <Content Include="IMAGE_CONTENT\Life Navigators\LifeNavigatorsMission.txt" />
     <Content Include="INSTRUCTIONS\Instructions.txt" />
     <Content Include="ryan\hereos.html" />
+    <Content Include="ryan\script.js" />
     <Content Include="ryan\ln.html" />
     <Content Include="ryan\media.html" />
     <Content Include="ryan\ctw.html" />
+    <Content Include="ryan\site.css" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
