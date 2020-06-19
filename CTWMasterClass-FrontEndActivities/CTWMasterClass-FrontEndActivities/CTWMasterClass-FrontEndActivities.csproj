@@ -131,6 +131,7 @@
     <Content Include="Alijah\HerosForHealthcare.html" />
     <Content Include="Alijah\Media.html" />
     <Content Include="Alijah\LifeNavigators.html" />
+    <Content Include="Ammar\CTWPage2.html" />
     <Content Include="Ammar\CTWpratice.html" />
     <Content Include="Ammar\Heroes.html" />
     <Content Include="Ammar\Life.html" />
@@ -178,6 +179,7 @@
     <Content Include="ryan\ctw.html" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Ammar\StyleSheet1.scss" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

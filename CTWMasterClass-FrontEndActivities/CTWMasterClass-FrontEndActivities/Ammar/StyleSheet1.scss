@@ -38,4 +38,26 @@
 		background-color: white;
 		color: #557A95;
 	}
+
+	.tooltip {
+		position: relative;
+		display: inline-block;
+		border-bottom: 1 px dotted black;
+	}
+
+	.tooltip:hover .tooltiptext {
+		visibility: visible;
+	}
+
+	.tooltip .tooltiptext {
+		visibility: hidden;
+		width: 500 px;
+		background-color: black;
+		color: #fff;
+		text-align: center;
+		border-radius: 6 px;
+		padding: 5px 0;
+		position: absolute;
+		z-index: 1;
+	}
 }
