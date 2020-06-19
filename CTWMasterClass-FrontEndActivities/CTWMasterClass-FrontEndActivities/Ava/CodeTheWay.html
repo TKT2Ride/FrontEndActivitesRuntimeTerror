@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <link href="site.css" rel="stylesheet" />
-
+    <script src="script.js"></script>
     <title>Code the Way</title>
 </head>
-<body>
+<body onload="showHide()">
     <img src="../IMAGE_CONTENT/Code the Way/CodeTheWay Logo.png" alt="Code the Way Logo">
 
     <div class="majorHeading">
@@ -28,48 +28,57 @@
         </p>
         <ul>
             <li>
-                Student access to real-world job experience – In addition to an advanced course that may earn post-secondary credits, students get experience working collaboratively on a project that benefits a nonprofit, culminating in a presentation to business leaders.
+                <div class="tooltips">
+                    Student access to real-world job experience
+                <div class="tooltiptext">In addition to an advanced course that may earn post-secondary credits, students get experience working collaboratively on a project that benefits a nonprofit, culminating in a presentation to business leaders.
+                    </div>
+                    </div>
             </li>
             <li>
-                Companies are part of the solution – Companies invest in education, make technology more accessible to nonprofits, offer their employees a meaningful volunteer experience, and contribute to the talent pipeline.
+                <div class="tooltips">
+                    Companies are part of the solution<div class="tooltiptext">
+                        Companies invest in education, make technology more accessible to nonprofits, offer their employees a meaningful volunteer experience, and contribute to the talent pipeline.
+                    </div>
+                </div>
             </li>
             <li>
-                Increasing certified computer science teachers – Support and training for computer science teacher certification increase the availability and quality of high school computer science programs.
+                <div class="tooltips">
+                    Increasing certified computer science teachers<div class="tooltiptext">
+                        Support and training for computer science teacher certification increase the availability and quality of high school computer science programs.
+                    </div>
+                </div>
             </li>
         </ul>
     </div>
-    <img src="../IMAGE_CONTENT/Code the Way/Team Learning.jpg" alt="Team Learning" align ="right">
-    <div class="minorHeading">
-        <h2>
-            Vision
-        </h2>
-    </div>
-    <div class="generalText">
-        <p>
-            High school students in Greater Milwaukee have access to high-quality computer science education and real-world job experiences, positioning them for success in technology-related fields
-        </p>
+    <img src="../IMAGE_CONTENT/Code the Way/Team Learning.jpg" alt="Team Learning" align="right">
+    <button onclick="showHide()" class="buttonFormatting">Show Vision</button>
+    <div id="vision">
+        <p class="minorHeading">Vision</p>
+        <div class="generalText">
+            <p>High school students in Greater Milwaukee have access to high quality computer science education and real-world job experiences, positioning them for success in technology-related fields.</p>
+        </div>
     </div>
     <div class="minorHeading">
         <h2>
             Links
         </h2>
     </div>
-    
-    
-        <div class="buttonFormatting:hover">
-            <div class="buttonFormatting">
-               <a href="http://google.com">Life Navigators</a>
-            </div>
-        
-            <div class="buttonFormatting">
-                <a href="http://google.com">Heroes For Healthcare</a>
-            </div>
-        
-            <div class="buttonFormatting">
-                <a href="http://google.com">Media</a>
-            </div>
+
+
+    <div class="buttonFormatting:hover">
+        <div class="buttonFormatting">
+            <a href="http://google.com">Life Navigators</a>
         </div>
-    
-       
-</body>
+
+        <div class="buttonFormatting">
+            <a href="http://google.com">Heroes For Healthcare</a>
+        </div>
+
+        <div class="buttonFormatting">
+            <a href="http://google.com">Media</a>
+        </div>
+    </div>
+
+
+    </bodyonload="showHide()">
 </html>

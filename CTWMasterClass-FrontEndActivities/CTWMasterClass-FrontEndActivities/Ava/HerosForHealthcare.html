@@ -3,9 +3,10 @@
 <head>
     <meta charset="utf-8" />
     <link href="site.css" rel="stylesheet" />
+    <script src="script.js"></script>
     <title>Heros for Healthcare</title>
 </head>
-<body>
+<bod onload="showHide()" y>
     <img src="../IMAGE_CONTENT/Heroes for Healthcare/Heroes Logo.png" />
     <div class="majorHeading">
         <h1 style="text-align:center">
@@ -37,27 +38,29 @@
 
         <ul>
             <li>
-                453,000 unemployed veterans in 2016
+                <div class="tooltips">
+                    453,000<div class="tooltiptext">
+                        unemployed veterans in 2016
+                    </div>
+                </div>
             </li>
             <li>
-                Post-Sept. 11 veterans tend to be unemployed at higher rates than other veterans
+                <div class="tooltips">
+                    Post-Sept. 11<div class="tooltiptext">
+                        veterans tend to be unemployed at higher rates than other veterans
+                    </div>
+                </div>
             </li>
         </ul>
     </div>
-    <div class="minorHeading">
-        <h2>
-            Message from the President
-        </h2>
+
+    <button onclick="showHide()" class="buttonFormatting">Show Message from the President</button>
+    <div id="vision">
+        <p class="minorHeading">Message from the President</p>
+        <div class="generalText">
+            <p>I started Heroes for Healthcare to help our U.S. military personnel receive the resources and credentials they need to continue their career in healthcare as a civilian. We need supporters like you to help our mission so our service members can get a job and better their lives. After all they did for us, supporting this organization seems like the right thing to do. Make a difference today by supporting Heroes for Healthcare.</p>
+        </div>
     </div>
-    <div class="generalText">
-        <p>
-            I started Heroes for Healthcare to help our U.S. military personnel receive the resources and credentials they need to continue their career in healthcare as a civilian. We need supporters like you to help our mission so our service members can get a job and better their lives. After all they did for us, supporting this organization seems like the right thing to do. Make a difference today by supporting Heroes for Healthcare.
-        </p>
-    </div>
-    <div class="buttonFormatting:hover">
-    <div class="buttonFormatting">
-        <a href="http://google.com">Home</a>
-    </div>
-    </div>
-</body>
+    <button type="button" class="buttonFormatting" onclick="location.href='ctw.html';">Home</button>
+    </body>
 </html>
