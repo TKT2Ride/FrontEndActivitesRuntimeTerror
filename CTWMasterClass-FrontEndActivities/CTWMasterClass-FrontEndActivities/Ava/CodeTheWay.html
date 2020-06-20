@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <link href="site.css" rel="stylesheet" />
-    <script src="script.js"></script>
+    <script src="mySite.js"></script>
     <title>Code the Way</title>
 </head>
 <body onload="showHide()">
@@ -28,7 +28,7 @@
         </p>
         <ul>
             <li>
-                <div class="tooltips">
+                <div class="tooltip">
                     Student access to real-world job experience
                     <div class="tooltiptext">
                         In addition to an advanced course that may earn post-secondary credits, students get experience working collaboratively on a project that benefits a nonprofit, culminating in a presentation to business leaders.
@@ -36,15 +36,17 @@
                 </div>
             </li>
             <li>
-                <div class="tooltips">
-                    Companies are part of the solution<div class="tooltiptext">
+                <div class="tooltip">
+                    Companies are part of the solution
+                    <div class="tooltiptext">
                         Companies invest in education, make technology more accessible to nonprofits, offer their employees a meaningful volunteer experience, and contribute to the talent pipeline.
                     </div>
                 </div>
             </li>
             <li>
-                <div class="tooltips">
-                    Increasing certified computer science teachers<div class="tooltiptext">
+                <div class="tooltip">
+                    Increasing certified computer science teachers
+                    <div class="tooltiptext">
                         Support and training for computer science teacher certification increase the availability and quality of high school computer science programs.
                     </div>
                 </div>
@@ -53,11 +55,15 @@
     </div>
     <img src="../IMAGE_CONTENT/Code the Way/Team Learning.jpg" alt="Team Learning" align="right">
     <button onclick="showHide()" class="buttonFormatting">Show Vision</button>
- 
-        <p  id="vision"class="minorHeading">Vision</p>
-      
-            <p id="vision" class="generalText">High school students in Greater Milwaukee have access to high quality computer science education and real-world job experiences, positioning them for success in technology-related fields.</p>
-        
+    <div id="vision">
+        <div class="minorHeading">
+            <p>Vision</p>
+        </div>
+        <div class="generalText">
+            <p>High school students in Greater Milwaukee have access to high quality computer science education and real-world job experiences, positioning them for success in technology-related fields.</p>
+        </div>
+    </div>
+
     <div class="minorHeading">
         <h2>
             Links
@@ -80,5 +86,5 @@
     </div>
 
 
-    </bodyonload="showHide()">
+    </body>
 </html>
